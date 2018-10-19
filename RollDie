@@ -1,0 +1,24 @@
+package die;
+import java.util.*;
+public class RollDie 
+{
+
+	public static void main(String[] args)
+	{
+		int sides;
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.print("How many sides do you want your die to have?");
+	sides = keyboard.nextInt();
+	
+	
+	Die die1 = new Die(sides);
+	
+	int numberRolled = die1.roll();
+	System.out.println(numberRolled);
+		
+}
+	}
+	
+
